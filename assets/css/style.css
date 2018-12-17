@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: auto;
+    margin: auto;
+    color: rgba(230, 250, 5, 0.591);
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+}
+
+.header {
+    font-size: 60px;
+    color: rgba(230, 250, 5, 0.591);
+    padding: auto;
+    margin: auto;
+    /* background: rgba(248, 248, 3, 0.16); */
+}
+
+.timer {
+    font-size: 30px;
+    color: rgba(230, 250, 5, 0.591);
+    padding: auto;
+    margin: auto;
+    /* background: rgba(0, 0, 0, 0.16); */
+}
+
+.question {
+    font-size: 30px;
+    color: rgba(230, 250, 5, 0.591);
+    padding: auto;
+    margin: auto;
+    /* background: rgba(0, 0, 0, 0.16); */
+}
+
+.answers {
+    font-size: 30px;
+    color: rgba(230, 250, 5, 0.591);
+    padding: auto;
+    margin: auto;
+    /* background: rgba(0, 0, 0, 0.16); */
+}
+
+.footer {
+    color: rgba(230, 250, 5, 0.591);
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 0px;
+    padding: auto;
+    margin: auto;
+
+}
