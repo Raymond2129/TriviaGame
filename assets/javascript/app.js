@@ -31,6 +31,11 @@ $(document).ready(function() {
             }
         }
      };
+//enter var sounds and put into function to pick a random one to play
+var soundOne = new Audio ("../sounds/Countdown-Me-728881159.mp3"); 
+var soundTwo = new Audio ("../sounds/alien-spaceship_daniel_simion.mp3");
+var soundThree = new Audio ("../sounds/Appear-KP-1137861048.mp3"); 
+var soundFour = new Audio ("../sounds/Spaceship_Takeoff-Richard-902554369.mp3");
 var correct = 0;
 var wrong = 0;
 
@@ -159,7 +164,8 @@ function getAnswer() {
 		$("#buttonB").text('');
 		$("#buttonC").text('');
 		$("#buttonD").text('');
-		loadQuestion();
+        loadQuestion();
+        soundOne.play();
 	})
 }
 
