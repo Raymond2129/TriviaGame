@@ -32,10 +32,10 @@ $(document).ready(function() {
         }
      };
 //enter var sounds and put into function to pick a random one to play
-var soundOne = new Audio ("../sounds/Countdown-Me-728881159.mp3"); 
-var soundTwo = new Audio ("../sounds/alien-spaceship_daniel_simion.mp3");
-var soundThree = new Audio ("../sounds/Appear-KP-1137861048.mp3"); 
-var soundFour = new Audio ("../sounds/Spaceship_Takeoff-Richard-902554369.mp3");
+var soundOne = new Audio ("assets/sounds/Countdown-Me-728881159.mp3"); 
+var soundTwo = new Audio ("assets/sounds/alien-spaceship_daniel_simion.mp3");
+var soundThree = new Audio ("assets/sounds/Appear-KP-1137861048.mp3"); 
+var soundFour = new Audio ("assets/sounds/Spaceship_Takeoff-Richard-902554369.mp3");
 var correct = 0;
 var wrong = 0;
 
@@ -140,6 +140,7 @@ function loadQuestion(questionSelection) {
     $("#buttonB").text(questionArray[questionSelection].possibleAnswers[1]).show();
     $("#buttonC").text(questionArray[questionSelection].possibleAnswers[2]).show();
     $("#buttonD").text(questionArray[questionSelection].possibleAnswers[3]).show();
+    soundTwo.play();
 }
 
 function setup() {
@@ -165,7 +166,6 @@ function getAnswer() {
 		$("#buttonC").text('');
 		$("#buttonD").text('');
         loadQuestion();
-        soundOne.play();
 	})
 }
 
